@@ -1,75 +1,57 @@
-Image to Text OCR
-This project is a simple Optical Character Recognition (OCR) tool built using Python. It extracts readable text from images using the pytesseract library and displays the output for further use or processing.
+# 🖼️ Image to Text OCR
 
-🔍 Features
-Convert printed or handwritten text in images to digital text.
+A simple Python project to extract text from images using Optical Character Recognition (OCR) with `pytesseract`.
 
-Supports various image formats (.jpg, .png, .jpeg, etc.).
+## 📌 Features
 
-Easy-to-use interface for uploading images.
+- Extracts text from images (JPG, PNG, etc.)
+- Uses Tesseract OCR via `pytesseract`
+- Easy and minimal code
 
-Displays extracted text in a user-friendly format.
+## 🚀 Getting Started
 
-🛠️ Tech Stack
-Python
+### 1. Clone the Repository
 
-OpenCV
-
-pytesseract (Tesseract-OCR)
-
-🚀 Installation
-Clone the Repository
-
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/tanush-47/Image-to-Text-OCR-.git
 cd Image-to-Text-OCR-
-Install Required Libraries
+```
 
-bash
-Copy
-Edit
+### 2. Install Requirements
+
+```bash
 pip install -r requirements.txt
-Install Tesseract-OCR Engine
+```
 
-Windows: Download and install from Tesseract OCR Windows Installer
+### 3. Install Tesseract-OCR
 
-Linux:
-
-bash
-Copy
-Edit
+- **Windows**: [Download Installer](https://github.com/tesseract-ocr/tesseract/wiki)
+- **Linux**:
+```bash
 sudo apt install tesseract-ocr
-Configure Tesseract Path (if needed)
+```
 
-python
-Copy
-Edit
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # For Windows
-🖼️ How to Use
+Update the Tesseract path in your code (for Windows):
+
+```python
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+```
+
+## 🧪 Usage
+
 Run the script:
 
-bash
-Copy
-Edit
+```bash
 python image_to_text.py
-Upload an image file.
+```
 
-The script will process the image and print the extracted text.
+It will load the image and print the extracted text to the terminal.
 
-📄 Example
-Input Image:
+## 📷 Example
 
-Output Text:
+**Input:** An image with printed or handwritten text  
+**Output:** Extracted text in the terminal
 
-vbnet
-Copy
-Edit
-Welcome to OCR using Python!
-📌 To-Do
-Add GUI support (Tkinter/Streamlit).
+## 📃 License
 
-Support multi-language OCR.
-
-Text-to-speech conversion from OCR output.
+MIT License
